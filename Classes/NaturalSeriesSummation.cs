@@ -11,7 +11,7 @@ namespace SummationTask.Classes
     {
         private NaturalSeriesSummation() { }
 
-        private static NaturalSeriesSummation objNaturalSeriesSummation = null;
+        private static NaturalSeriesSummation? objNaturalSeriesSummation = null;
 
         public static NaturalSeriesSummation Instance
         {
