@@ -7,6 +7,7 @@ using SummationTask.Interface;
 
 namespace SummationTask.Classes
 {
+    //concrete class of the output class
     public class SummationOutput : ISummationOutput
     {
         public double SummationResult { get; set; }

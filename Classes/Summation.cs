@@ -7,6 +7,7 @@ using SummationTask.Interface;
 
 namespace SummationTask.Classes
 {
+    //based abstract class open for extension
     public abstract class Summation : ISummation
     {
         public Summation()

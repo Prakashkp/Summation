@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SummationTask.Interface
 {
+    //this class can be used to process the input data
     public class SummationInput
     {
         public SummationInput() { }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SummationTask.Classes
 {
+    //Factory method to get the summation instance
     public class SummationFactory
     {
         public SummationFactory() { }

@@ -7,6 +7,7 @@ using SummationTask.Classes;
 
 namespace SummationTask.Interface
 {
+    //base summation interface
     public interface ISummation
     {
         public SummationOutput Calculate(SummationInput input);

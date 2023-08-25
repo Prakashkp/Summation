@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SummationTask.Interface
 {
+    // interface for the natural number series. this interface can be used if need to extend only natural number series
     internal interface INaturalSeries : INaturalSummation
     {
     }

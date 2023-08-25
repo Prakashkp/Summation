@@ -7,6 +7,7 @@ using SummationTask.Interface;
 
 namespace SummationTask.Classes
 {
+    //Facade class to process the natural summation of n number
     public class NaturalSummationFacade : INaturalSeries
     {
         ISummation summation = null;

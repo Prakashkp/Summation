@@ -7,9 +7,11 @@ using SummationTask.Interface;
 
 namespace SummationTask.Classes
 {
+    //facade class to process natura quare n number
     public class NaturalSquareSummationFacade : INaturalSquareSeries
     {
         ISummation summation = null;
+        //dependency inject for dependent class
         public NaturalSquareSummationFacade(ISummation _summation)
         {
             summation = _summation;

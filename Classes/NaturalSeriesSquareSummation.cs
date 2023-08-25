@@ -9,10 +9,12 @@ namespace SummationTask.Classes
 {
     public class NaturalSeriesSquareSummation : Summation
     {
+        //restricted class instansiation
         private NaturalSeriesSquareSummation() { }
 
         private static NaturalSeriesSquareSummation objNaturalSeriesSquareSummation = null;
 
+        //singleton instance
         public static NaturalSeriesSquareSummation Instance
         {
             get
@@ -24,6 +26,8 @@ namespace SummationTask.Classes
                 return objNaturalSeriesSquareSummation;
             }
         }
+
+        //calculation for natural series squeare number
         public override SummationOutput Calculate(SummationInput input)
         {
             return new SummationOutput { SummationResult = (input.Data) * (input.Data + 1) * (2 * input.Data + 1) / 6 };
