@@ -17,18 +17,14 @@ namespace SummationTask
         {
             Console.WriteLine("Enter the number(count) to find the sum of series (from 1 to the number entered)");
             var n = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Press 1 for Summation Series or Press 2 for Square Series");
+            var summationType = Convert.ToInt16(Console.ReadLine());
             //injecting the dependent class based on SOLID principle and creating facade class for sequence of task and client wont know about the complex of the process
-            var summationSeriesFacade = new NaturalSummationFacade(SummationFactory.GetNaturalSeriesSummation());
+            INaturalSummation summationSeriesFacade = new NaturalSummationFacade(SummationFactory.GetNaturalSeriesSummation());
             // Processing the facade class
-            var resultNaturalSummation = summationSeriesFacade.Processs(n);
+            var resultNaturalSummation = SummationFacade.ProcessType(summationType, n);
             //Printing the result
             Console.WriteLine($"The sum of series for the number entered {n} is : " + resultNaturalSummation.SummationResult.ToString());
-            //injecting the dependent class and creating facade class for sequence of task and client wont know about the complex of the process
-            var summationSquareSeriesFacade = new NaturalSquareSummationFacade(SummationFactory.GetNaturalSeriesSquareSummation());
-            // Processing the facade class
-            var resultNaturalSquareSummation = summationSquareSeriesFacade.Processs(n);
-            //Printing the result
-            Console.WriteLine($"The sum of square series for the number entered {n} is : " + resultNaturalSquareSummation.SummationResult.ToString());
             Console.ReadLine();
         }
     }
