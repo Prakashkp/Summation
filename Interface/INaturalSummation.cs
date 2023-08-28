@@ -7,7 +7,9 @@ using SummationTask.Classes;
 
 namespace SummationTask.Interface
 {
-    // interface for all the summation class contains base process signature required for all the concreete class
+    /// <summary>
+    /// interface for all the summation class contains base process signature required for all the concreete class
+    /// </summary>
     public interface INaturalSummation
     {
         //base process signature required for all the concreete class

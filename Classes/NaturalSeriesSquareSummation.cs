@@ -7,6 +7,9 @@ using SummationTask.Interface;
 
 namespace SummationTask.Classes
 {
+    /// <summary>
+    /// This is the concreate class for the square series summation
+    /// </summary>
     public class NaturalSeriesSquareSummation : Summation
     {
         //restricted class instansiation
@@ -14,7 +17,7 @@ namespace SummationTask.Classes
 
         private static NaturalSeriesSquareSummation objNaturalSeriesSquareSummation = null;
 
-        //singleton instance
+        //this is singleton instance
         public static NaturalSeriesSquareSummation Instance
         {
             get

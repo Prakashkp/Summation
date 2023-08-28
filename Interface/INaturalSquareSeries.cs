@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SummationTask.Interface
 {
-    //interface segregated if need any modification required in natural series alone
+    /// <summary>
+    /// interface segregated if need any modification required in natural series alone
+    /// </summary>
     internal interface INaturalSquareSeries: INaturalSummation
     {
     }

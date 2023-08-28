@@ -7,7 +7,9 @@ using SummationTask.Interface;
 
 namespace SummationTask.Classes
 {
-    //Facade class to process the natural summation of n number
+    /// <summary>
+    /// This is Facade class to process the natural summation of n number
+    /// </summary>
     public class NaturalSummationFacade : INaturalSeries
     {
         ISummation summation = null;
@@ -15,6 +17,12 @@ namespace SummationTask.Classes
         {
             summation = _summation;
         }
+
+        /// <summary>
+        /// this method will process the summation method hide the complexity process to the consumer
+        /// </summary>
+        /// <param name="inputValue"></param>
+        /// <returns></returns>
         public SummationOutput Processs(double inputValue)
         {
             //input Process

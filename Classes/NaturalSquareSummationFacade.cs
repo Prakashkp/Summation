@@ -7,15 +7,26 @@ using SummationTask.Interface;
 
 namespace SummationTask.Classes
 {
-    //facade class to process natura quare n number
+    /// <summary>
+    /// facade class to process natural square n number
+    /// </summary>
     public class NaturalSquareSummationFacade : INaturalSquareSeries
     {
         ISummation summation = null;
-        //dependency inject for dependent class
+        /// <summary>
+        /// dependency inject for dependent class
+        /// </summary>
+        /// <param name="_summation"></param>
         public NaturalSquareSummationFacade(ISummation _summation)
         {
             summation = _summation;
         }
+
+        /// <summary>
+        /// this method is to process the summation. hides the complexity from the consumer
+        /// </summary>
+        /// <param name="inputValue"></param>
+        /// <returns></returns>
         public SummationOutput Processs(double inputValue)
         {
             //input Process

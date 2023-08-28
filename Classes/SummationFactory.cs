@@ -6,17 +6,29 @@ using System.Threading.Tasks;
 
 namespace SummationTask.Classes
 {
-    //Factory method to get the summation instance
+    /// <summary>
+    /// This is the Factory class is used to get the summation instance for the class
+    /// </summary>
     public class SummationFactory
     {
+        //Default constructor
         public SummationFactory() { }
+        /// <summary>
+        /// This method is used to get the Natural Series Summation Instance
+        /// </summary>
+        /// <returns>NaturalSeriesSummation</returns>
         public static NaturalSeriesSummation GetNaturalSeriesSummation()
         {
             return NaturalSeriesSummation.Instance;
         }
+        /// <summary>
+        ///  This method is used to get the Natural Square Series Summation Instance
+        /// </summary>
+        /// <returns>NaturalSeriesSquareSummation</returns>
         public static NaturalSeriesSquareSummation GetNaturalSeriesSquareSummation()
         {
             return NaturalSeriesSquareSummation.Instance;
         }
+        
     }
 }
